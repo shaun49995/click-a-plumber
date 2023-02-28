@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+/*! Testimonial Slider */
+.arrows {
+   width: 24px;
+   height: 24px;
+   position: absolute;
+   top: 50%;
+   margin-top: 28px;
+}
+
+.prev-arrow {
+   border-bottom: 3px solid;
+   border-left: 3px solid;
+   border-color: #ccc;
+   transform: rotate(45deg);
+   left: 10px;
+}
+
+.next-arrow {
+   border-bottom: 3px solid;
+   border-left: 3px solid;
+   border-color: #ccc;
+   transform: rotate(-135deg);
+   right: 10px;
+}
+
+@media (max-width: 767px) {
+.object-slider {
+    overflow-x: scroll;
+    margin: 0 -1.25rem;
+    height: fit-content;
+    scroll-snap-type: x mandatory;
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-padding: 0 1.25rem;
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.testimonial-slide {
+    width: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+.service-slide {
+  width: calc(100vw - 2.5rem);
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+}
+
+.divider-mirrored-y {
+  -webkit-transform: scaley(-1);
+  transform: scaley(-1);
+}
+.divider-mirrored-x {
+  -webkit-transform: scalex(-1);
+  transform: scalex(-1);
+}
+.divider-mirrored-xy {
+  -webkit-transform: scalex(-1) scaley(-1);
+  transform: scalex(-1) scaley(-1);
+}
